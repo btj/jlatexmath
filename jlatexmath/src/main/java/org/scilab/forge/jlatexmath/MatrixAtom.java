@@ -196,6 +196,9 @@ public class MatrixAtom extends Atom {
                 for (int j = 0; j < matrix.row; j++) {
                     matrix.array.get(j).add(lposition.size(), at);
                 }
+                
+                if (lposition.size() == 0)
+                	spaceAround = false;
 
                 lposition.add(TeXConstants.ALIGN_NONE);
                 pos += tp.getPos();
@@ -439,7 +442,7 @@ public class MatrixAtom extends Atom {
 
         VerticalBox vb = new VerticalBox();
         Box Vsep = vsep_in.createBox(env);
-        vb.add(vsep_ext_top.createBox(env));
+        //vb.add(vsep_ext_top.createBox(env));
         float totalHeight = 0;
 
         for (int i = 0; i < row; i++) {
@@ -520,7 +523,7 @@ public class MatrixAtom extends Atom {
             }
         }
 
-        vb.add(vsep_ext_bot.createBox(env));
+        //vb.add(vsep_ext_bot.createBox(env));
         totalHeight = vb.getHeight() + vb.getDepth();
 
         float axis = env.getTeXFont().getAxisHeight(env.getStyle());
