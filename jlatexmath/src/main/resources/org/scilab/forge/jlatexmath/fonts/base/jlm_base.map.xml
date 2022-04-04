@@ -263,7 +263,7 @@
 
   <SymbolMapping name="equals" ch="61" fontId="jlm_cmr10"/>
   <SymbolMapping name="gt" ch="62" fontId="jlm_cmmi10_unchanged"/>
-  <SymbolMapping name="lt" ch="60" fontId="jlm_cmmi10_unchanged"/>
+  <SymbolMapping name="lt" ch="60" fontId="jlm_cmr10"/>
   <SymbolMapping name="leq" ch="183" fontId="jlm_cmsy10"/>
   <SymbolMapping name="le" ch="183" fontId="jlm_cmsy10"/>
   <SymbolMapping name="prec" ch="193" fontId="jlm_cmsy10"/>
